@@ -461,10 +461,9 @@ h1 a {
 #content {
 	width:100%;
 	padding:15px 0 0px;
-	background:#fff;
 	position:relative;
 	z-index:1;
-		background:#fffff2;
+	background:#f9f9cf;
 	
 }
 .spacer-1 {

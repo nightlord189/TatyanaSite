@@ -758,3 +758,20 @@ footer {
 	position:relative;
 	z-index:9;
 }
+
+.button-link {
+	background-color: #272829;
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.button-link:hover {
+	color: rgb(247, 247, 247);
+}

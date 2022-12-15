@@ -119,7 +119,7 @@
                     <div  class="content-header">
                         Индивидуальные занятия &nbsp;&nbsp;
                     </div>
-                    <div class="content-text">
+                    <div class="content-text" id="price-single">
                         60 минут - 1500 рублей
                     </div>
                 </article>
@@ -127,13 +127,27 @@
                     <div  class="content-header">
                        Занятия в мини-группах (2-6 человек)
                     </div>
-                    <div class="content-text">
+                    <div class="content-text" id="price-group">
                         60 минут - 750 рублей
                     </div>
                 </article>
             </div>
         </div>
     </div>
+
+    <script type="text/javascript">
+        const host = window.location.host;
+        singlePriceText = document.getElementById("price-single");
+        groupPriceText = document.getElementById("price-group");
+
+        if (host.endsWith(".ru")) {
+            singlePriceText.innerText = '60 минут - 1500 рублей';
+            groupPriceText.innerText = '60 минут - 750 рублей';
+        } else {
+            singlePriceText.innerText = '60 минут - 7000 тенге';
+            groupPriceText.innerText = '60 минут - 3500 тенге';
+        }
+    </script>
 </section>
 
 

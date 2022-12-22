@@ -42,7 +42,7 @@
             <br><a href="https://wa.me/77784925153" style="color: black">WhatsApp: +7 778 492 51 53</a><br>
           <a class="button-link" href="https://gumroad.com/vsedlyadoshkolnikov" role="button">Мои продукты</a>
 	  <a class="button-link" href="https://www.youtube.com/channel/UCASKvUTT1w8co-icm9yLb5w" role="button">Мой Youtube-канал</a>
-	  <a class="button-link" href="https://www.instagram.com/repetitor_0_4klass/" role="button">Instagram</a>
+	  <a class="button-link" href="https://www.instagram.com/repetitor_0_4klass/" role="button" id="link-instagram">Instagram</a>
       <div class="clear"></div>
     </div>
   </div>
@@ -132,6 +132,10 @@
                     </div>
                 </article>
             </div>
+            <div class="content-text" id="price-common">
+                <br>
+                <p>Напишите мне на Whatsapp. Я проведу для Вашего ребенка бесплатный пробный урок.</p>
+            </div>
         </div>
     </div>
 
@@ -139,13 +143,16 @@
         const host = window.location.host;
         singlePriceText = document.getElementById("price-single");
         groupPriceText = document.getElementById("price-group");
+        instagramLink = document.getElementById("link-instagram");
 
         if (host.endsWith(".ru")) {
             singlePriceText.innerText = '60 минут - 1500 рублей';
             groupPriceText.innerText = '60 минут - 750 рублей';
+            document.getElementById("price-common").remove();
         } else {
-            singlePriceText.innerText = '60 минут - 7000 тенге';
-            groupPriceText.innerText = '60 минут - 3500 тенге';
+            singlePriceText.remove();
+            groupPriceText.remove();
+            instagramLink.remove();
         }
     </script>
 </section>

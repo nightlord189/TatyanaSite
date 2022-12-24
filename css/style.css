@@ -107,20 +107,6 @@ img {
     margin-right: auto;
 }
 
-.review {
-	background-color: #def3fc;
-	margin-top:40px;
-	margin-bottom:40px;
-}
-
-.review-header {
-	font-size:50px;
-	align:center;
-	text-align:center;
-	line-height:1.5;
-	color:black;
-}
-
    table {
     margin: auto; /* Выравниваем таблицу по центру окна  */
 	border-spacing: 30px;
@@ -459,14 +445,7 @@ h1 a {
 	margin-bottom:35px;
 }
 /*********************************content*************************************/
-#content {
-	width:100%;
-	padding:15px 0 0px;
-	position:relative;
-	z-index:1;
-	background:#ffefd5;
-	
-}
+
 .spacer-1 {
 	width:100%;
 	background: 217px 0 repeat-y;
@@ -777,4 +756,33 @@ footer {
 .button-link:hover {
 	color: rgb(0, 0, 0);
 	text-decoration: underline;
+}
+
+#content {
+	width:100%;
+	position:relative;
+	z-index:1;
+}
+
+.content {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top:0px;
+	padding-bottom: 0px;
+}
+
+.content-1 {
+	background-color: #ffefd5;
+}
+
+.content-2 {
+	background-color: #def3fc;
+}
+
+.review-header {
+	font-size:50px;
+	align:center;
+	text-align:center;
+	line-height:1.5;
+	color:black;
 }

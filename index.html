@@ -40,6 +40,7 @@
       </div>
 			педагог с 25-летним стажем
             <br><a href="https://wa.me/77784925153" style="color: black">WhatsApp: +7 778 492 51 53</a><br>
+            <a id="phone-second" href="tel:77076805622" style="color: black">T: +7 707 680 56 22</a><br>
           <a class="button-link" href="https://gumroad.com/vsedlyadoshkolnikov" role="button">Мои продукты</a>
 	  <a class="button-link" href="https://www.youtube.com/channel/UCASKvUTT1w8co-icm9yLb5w" role="button">Мой Youtube-канал</a>
 	  <a class="button-link" href="https://www.instagram.com/repetitor_0_4klass/" role="button" id="link-instagram">Instagram</a>
@@ -109,50 +110,70 @@
 </div>
 </div>
 
-    <div class="middle-header">
-        Цены
-    </div>
-    <div class="main" style="padding-bottom: 80px">
-        <div class="container_12">
-            <div class="wrapper">
-                <article class="grid_6">
-                    <div  class="content-header">
-                        Индивидуальные занятия &nbsp;&nbsp;
-                    </div>
-                    <div class="content-text" id="price-single">
-                        60 минут - 1500 рублей
-                    </div>
-                </article>
-                <article class="grid_6">
-                    <div  class="content-header">
-                       Занятия в мини-группах (2-6 человек)
-                    </div>
-                    <div class="content-text" id="price-group">
-                        60 минут - 750 рублей
-                    </div>
-                </article>
+    <div id="prices-block">
+        <div class="middle-header">
+            Цены
+        </div>
+        <div class="main" style="padding-bottom: 80px">
+            <div class="container_12">
+                <div class="wrapper">
+                    <article class="grid_6">
+                        <div  class="content-header">
+                            Индивидуальные занятия &nbsp;&nbsp;
+                        </div>
+                        <div class="content-text" id="price-single">
+                            60 минут - 1500 рублей
+                        </div>
+                    </article>
+                    <article class="grid_6">
+                        <div  class="content-header">
+                            Занятия в мини-группах (2-6 человек)
+                        </div>
+                        <div class="content-text" id="price-group">
+                            60 минут - 750 рублей
+                        </div>
+                    </article>
+                </div>
             </div>
-            <div class="content-text" id="price-common">
-                <br>
-                <p>Напишите мне на Whatsapp. Я проведу для Вашего ребенка бесплатный пробный урок.</p>
+        </div>
+    </div>
+
+    <div id="free-lesson-block" style="font-weight: bold">
+        <div class="main" style="padding-bottom: 30px">
+            <div class="container_12">
+                <div class="wrapper">
+                    <article class="grid_6">
+                        <div class="content-text">
+                            Напишите мне на WhatsApp!
+                            И я проведу для Вашего ребенка бесплатный пробный урок.
+                        </div>
+                    </article>
+                    <article class="grid_6">
+                        <div class="content-text">
+                            <br>
+                            <a href="https://wa.me/77784925153">+7 778 492 51 53</a>
+                        </div>
+                    </article>
+                </div>
             </div>
         </div>
     </div>
 
     <script type="text/javascript">
         const host = window.location.host;
+
         singlePriceText = document.getElementById("price-single");
         groupPriceText = document.getElementById("price-group");
-        instagramLink = document.getElementById("link-instagram");
+        pricesBlock = document.getElementById("prices-block");
 
         if (host.endsWith(".ru")) {
             singlePriceText.innerText = '60 минут - 1500 рублей';
             groupPriceText.innerText = '60 минут - 750 рублей';
-            document.getElementById("price-common").remove();
+            document.getElementById("phone-second").remove();
+            document.getElementById("phone-second-2").remove();
         } else {
-            singlePriceText.remove();
-            groupPriceText.remove();
-            instagramLink.remove();
+            pricesBlock.remove();
+            document.getElementById("link-instagram").remove();
         }
     </script>
 </section>
@@ -166,6 +187,7 @@
 		Контакты
 	</div>
         <a href="https://wa.me/77784925153">WhatsApp: +7 778 492 51 53</a><br>
+        <a id="phone-second-2" href="tel:77076805622">T: +7 707 680 56 22</a><br>
 	<br><a href="mailto:tatyana624624@mail.ru">tatyana624624@mail.ru</a>
 	</div>
   </div>
